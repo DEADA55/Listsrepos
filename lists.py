@@ -1,17 +1,17 @@
-import time as t
+import time as t # Imports time as variable t
 
-da_list = ["hello", 110, ["No", "Yes"], "people", True, "%", False]
+da_list = ["hello", 110, ["No", "Yes"], "people", True, "%", False] # this creates a list with variables in it
 word = "Superkalafragalisticexpealadocious"
 user_list = []
 num_list = [2, 6, 10, 14, 18, 22]
 
 print("Printing the Developers List...")
 t.sleep(2)
-print(da_list)
+print(da_list) # This prints the list
 t.sleep(2)
 print("Printing list line by line")
 t.sleep(2)
-print(da_list[0])
+print(da_list[0]) # Prints only one item from the list in the corresponding spot
 t.sleep(1)
 print(da_list[1])
 t.sleep(1)
@@ -25,11 +25,11 @@ print(da_list[6])
 t.sleep(2)
 print("Printing Developers nested list...")
 t.sleep(2)
-print(da_list[2])
+print(da_list[2]) # This pritns the nested list
 t.sleep(2)
 print("Printing Nested List by line...")
 t.sleep(2)
-print(da_list[2][1])
+print(da_list[2][1]) #Prints the nested list line by line
 t.sleep(1)
 print(da_list[2][0])
 t.sleep(2)
@@ -39,7 +39,7 @@ print(word)
 t.sleep(2)
 print("Lets print it without a certain letter, lets try a...")
 t.sleep(2)
-wds = word.split('a')
+wds = word.split('a') # This splits the word by seperating it wherever there is an 'a'.
 print (wds)
 t.sleep(2)
 print("Now lets get rid of the o...")
@@ -48,7 +48,7 @@ t.sleep(2)
 print(abc)
 t.sleep(2)
 print("Lets break it up letter by letter")
-xs = list("Superkalafragalisticexpialadocious")
+xs = list("Superkalafragalisticexpialadocious") # This seperates the whole word letter by letter
 t.sleep(2)
 print(xs)
 t.sleep(2)
@@ -58,7 +58,7 @@ print(num_list)
 t.sleep(2)
 print("Lets do these to the power of 2.")
 t.sleep(2)
-num_list2 = [item ** 2 for item in num_list]
+num_list2 = [item ** 2 for item in num_list] # This takes each variable and puts it to the power of 2
 print(num_list2)
 t.sleep(2)
 print("Now lets put these numbers to the power of 3!")
@@ -73,16 +73,16 @@ for anum_list3 in num_list3:
 t.sleep(2)
 print("lets delete the last item from our list.")
 t.sleep(2)
-lastitem = num_list3.pop()
+lastitem = num_list3.pop() # Grabs an item from the list and deletes it
 print(lastitem)
 print(num_list3)
 t.sleep(2)
-for anum_list3 in num_list3:
+for anum_list3 in num_list3: # Sorts the list then prints it line by line
     print(anum_list3)
 t.sleep(2)
 print("Now lets get rid of a specific item")
 t.sleep(2)
-num_list3.remove(64)
+num_list3.remove(64) # This removes the variable in the brackets from the list
 print(num_list3)
 t.sleep(2)
 print("Can you guess whats missing?")
@@ -104,7 +104,7 @@ while x == True:
 		t.sleep(2)
 		print("What would you like to add?")
 		item = raw_input("> ")
-		user_list.append(item)
+		user_list.append(item) # This adds an item to the list
 		t.sleep(2)
 		print("Your list is now:", user_list)
 	else:
@@ -124,7 +124,7 @@ if delete == "yes":
 			print("What would you like to delete?")
 			item = raw_input("> ")
 			if item in user_list:
-					user_list.remove(item)
+					user_list.remove(item) 
 					print("Your list is now:", user_list)
 			else:
 				print("Item not found in list")
